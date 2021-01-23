@@ -1,0 +1,12 @@
+{
+  "SMSCURL": "http://localhost:8080/1/smsmessaging/outbound/2260/requests",
+  "SMSCUserName": "TestUserName",
+  "SMSCPassword": "TestPassword",
+  "SMSCSender": "TestSenderName",
+  "LDAPdomainName": "CONTOSO",
+  "PinAttributeName": "employeeID",
+  "OTPCodeLength": 5,
+  "TelNumberAttributeName": "telephoneNumber",
+  "SmsTemplate": "Hi %UPN%. Your OTP code is %OTPCODE%",
+  "DebugEnabled": false
+}

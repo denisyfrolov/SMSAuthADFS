@@ -1,0 +1,36 @@
+﻿<div id="loginArea">
+    <form method="post" id="loginForm">
+        <!-- These inputs are required by the presentation framework. Do not modify or remove -->
+        <input id="authMethod" type="hidden" name="AuthMethod" value="%AuthMethod%" />
+        <input id="context" type="hidden" name="Context" value="%Context%" />
+        <!-- End inputs are required by the presentation framework. -->
+        <p id="pageIntroductionText">PIN</p>
+        <label for="challengeQuestionInput" class="block"></label>
+        <input id="challengeQuestionInput" name="PIN" type="text" value="" class="text" placeholder="Answer placeholder" />
+        <div id="submissionArea" class="submitMargin">
+            <input id="submitButton" type="submit" name="Submit" value="Submit" onclick="return AuthPage.submitAnswer()" />
+        </div>
+    </form>
+    <div id="intro" class="groupMargin">
+        <p id="supportEmail">Support information</p>
+    </div>
+    <div id="debug" class="groupMargin" style="display:none;">
+        <p id="Caller">Caller: DEBUG:Caller</p>
+        <p id="UPN">UPN: DEBUG:UPN</p>
+        <p id="PIN">PIN: DEBUG:PIN</p>
+        <p id="TelNumber">TelNumber: DEBUG:TelNumber</p>
+        <p id="OTPCode">OTPCode: DEBUG:OTPCode</p>
+        <p id="PinAnswer">PinAnswer: DEBUG:PinAnswer</p>
+        <p id="OTPCodeAnswer">OTPCodeAnswer: DEBUG:OTPCodeAnswer</p>
+    </div>
+    <script type="text/javascript" language="JavaScript">
+        //<![CDATA[
+        function AuthPage() { }
+        AuthPage.submitAnswer = function () { return true; };
+        if (DEBUG:Enabled)
+        {
+            document.getElementById('debug').style.display = 'block';
+        }
+            //]]>
+    </script>
+</div>
